@@ -9,13 +9,19 @@
 /* Begin PBXBuildFile section */
 		90462785239F104E0094D540 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90462784239F104E0094D540 /* AppDelegate.swift */; };
 		90462787239F104E0094D540 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90462786239F104E0094D540 /* SceneDelegate.swift */; };
-		90462789239F104E0094D540 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90462788239F104E0094D540 /* ViewController.swift */; };
 		9046278C239F104E0094D540 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9046278A239F104E0094D540 /* Main.storyboard */; };
 		9046278F239F104E0094D540 /* iddog.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9046278D239F104E0094D540 /* iddog.xcdatamodeld */; };
 		90462791239F104F0094D540 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90462790239F104F0094D540 /* Assets.xcassets */; };
 		90462794239F104F0094D540 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90462792239F104F0094D540 /* LaunchScreen.storyboard */; };
 		9046279F239F104F0094D540 /* iddogTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9046279E239F104F0094D540 /* iddogTests.swift */; };
 		904627AA239F104F0094D540 /* iddogUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904627A9239F104F0094D540 /* iddogUITests.swift */; };
+		9070AEB023A07D0000297194 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9070AEAF23A07B5700297194 /* LoginViewController.swift */; };
+		9070AEB623A07D8800297194 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9070AEB523A07D8400297194 /* LoginViewModel.swift */; };
+		9070AEBA23A07DAF00297194 /* EmailValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9070AEB923A07DAA00297194 /* EmailValidator.swift */; };
+		9070AEBB23A07DB200297194 /* PasswordValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9070AEB823A07DAA00297194 /* PasswordValidator.swift */; };
+		9070AEBE23A07DD900297194 /* LoginViewControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9070AEBD23A07DD300297194 /* LoginViewControllerProtocol.swift */; };
+		9070AEC123A07DF700297194 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9070AEC023A07DF300297194 /* LoginController.swift */; };
+		9070AEC423A07E2C00297194 /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9070AEC323A07E0600297194 /* LoginModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +45,6 @@
 		90462781239F104E0094D540 /* iddog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iddog.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		90462784239F104E0094D540 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		90462786239F104E0094D540 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		90462788239F104E0094D540 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9046278B239F104E0094D540 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9046278E239F104E0094D540 /* iddog.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = iddog.xcdatamodel; sourceTree = "<group>"; };
 		90462790239F104F0094D540 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -51,6 +56,13 @@
 		904627A5239F104F0094D540 /* iddogUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iddogUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		904627A9239F104F0094D540 /* iddogUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iddogUITests.swift; sourceTree = "<group>"; };
 		904627AB239F104F0094D540 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9070AEAF23A07B5700297194 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		9070AEB523A07D8400297194 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		9070AEB823A07DAA00297194 /* PasswordValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordValidator.swift; sourceTree = "<group>"; };
+		9070AEB923A07DAA00297194 /* EmailValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailValidator.swift; sourceTree = "<group>"; };
+		9070AEBD23A07DD300297194 /* LoginViewControllerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewControllerProtocol.swift; sourceTree = "<group>"; };
+		9070AEC023A07DF300297194 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		9070AEC323A07E0600297194 /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,12 +113,15 @@
 		90462783239F104E0094D540 /* iddog */ = {
 			isa = PBXGroup;
 			children = (
+				9070AEC223A07E0600297194 /* Models */,
+				9070AEAE23A07B3600297194 /* Views */,
+				9070AEB223A07D4900297194 /* ViewModels */,
+				9070AEBF23A07DF300297194 /* Controllers */,
+				9070AEBC23A07DD300297194 /* Protocols */,
+				9070AEB723A07D9C00297194 /* Validators */,
+				9070AEAB23A07AE600297194 /* Resources */,
 				90462784239F104E0094D540 /* AppDelegate.swift */,
 				90462786239F104E0094D540 /* SceneDelegate.swift */,
-				90462788239F104E0094D540 /* ViewController.swift */,
-				9046278A239F104E0094D540 /* Main.storyboard */,
-				90462790239F104F0094D540 /* Assets.xcassets */,
-				90462792239F104F0094D540 /* LaunchScreen.storyboard */,
 				90462795239F104F0094D540 /* Info.plist */,
 				9046278D239F104E0094D540 /* iddog.xcdatamodeld */,
 			);
@@ -129,6 +144,81 @@
 				904627AB239F104F0094D540 /* Info.plist */,
 			);
 			path = iddogUITests;
+			sourceTree = "<group>";
+		};
+		9070AEAB23A07AE600297194 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9070AEAC23A07AF000297194 /* Assets */,
+				9070AEAD23A07AF700297194 /* Storyboards */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		9070AEAC23A07AF000297194 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				90462790239F104F0094D540 /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		9070AEAD23A07AF700297194 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				9046278A239F104E0094D540 /* Main.storyboard */,
+				90462792239F104F0094D540 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		9070AEAE23A07B3600297194 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9070AEAF23A07B5700297194 /* LoginViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9070AEB223A07D4900297194 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				9070AEB523A07D8400297194 /* LoginViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		9070AEB723A07D9C00297194 /* Validators */ = {
+			isa = PBXGroup;
+			children = (
+				9070AEB923A07DAA00297194 /* EmailValidator.swift */,
+				9070AEB823A07DAA00297194 /* PasswordValidator.swift */,
+			);
+			path = Validators;
+			sourceTree = "<group>";
+		};
+		9070AEBC23A07DD300297194 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				9070AEBD23A07DD300297194 /* LoginViewControllerProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		9070AEBF23A07DF300297194 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				9070AEC023A07DF300297194 /* LoginController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		9070AEC223A07E0600297194 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9070AEC323A07E0600297194 /* LoginModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,10 +352,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				90462789239F104E0094D540 /* ViewController.swift in Sources */,
+				9070AEBB23A07DB200297194 /* PasswordValidator.swift in Sources */,
+				9070AEB023A07D0000297194 /* LoginViewController.swift in Sources */,
+				9070AEBE23A07DD900297194 /* LoginViewControllerProtocol.swift in Sources */,
 				9046278F239F104E0094D540 /* iddog.xcdatamodeld in Sources */,
+				9070AEC123A07DF700297194 /* LoginController.swift in Sources */,
+				9070AEC423A07E2C00297194 /* LoginModel.swift in Sources */,
 				90462785239F104E0094D540 /* AppDelegate.swift in Sources */,
+				9070AEB623A07D8800297194 /* LoginViewModel.swift in Sources */,
 				90462787239F104E0094D540 /* SceneDelegate.swift in Sources */,
+				9070AEBA23A07DAF00297194 /* EmailValidator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
