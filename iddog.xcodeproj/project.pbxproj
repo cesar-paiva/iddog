@@ -13,7 +13,6 @@
 		9046278F239F104E0094D540 /* iddog.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9046278D239F104E0094D540 /* iddog.xcdatamodeld */; };
 		90462791239F104F0094D540 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 90462790239F104F0094D540 /* Assets.xcassets */; };
 		90462794239F104F0094D540 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90462792239F104F0094D540 /* LaunchScreen.storyboard */; };
-		9046279F239F104F0094D540 /* iddogTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9046279E239F104F0094D540 /* iddogTests.swift */; };
 		904627AA239F104F0094D540 /* iddogUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 904627A9239F104F0094D540 /* iddogUITests.swift */; };
 		9070AEB023A07D0000297194 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9070AEAF23A07B5700297194 /* LoginViewController.swift */; };
 		9070AEB623A07D8800297194 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9070AEB523A07D8400297194 /* LoginViewModel.swift */; };
@@ -22,6 +21,16 @@
 		9070AEBE23A07DD900297194 /* LoginViewControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9070AEBD23A07DD300297194 /* LoginViewControllerProtocol.swift */; };
 		9070AEC123A07DF700297194 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9070AEC023A07DF300297194 /* LoginController.swift */; };
 		9070AEC423A07E2C00297194 /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9070AEC323A07E0600297194 /* LoginModel.swift */; };
+		9070AEC623A0822900297194 /* LoginViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9070AEC523A0822900297194 /* LoginViewControllerTests.swift */; };
+		9070AEC923A0824900297194 /* MockLoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9070AEC823A0824800297194 /* MockLoginViewModel.swift */; };
+		9070AECC23A0826E00297194 /* UITextFieldStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9070AECB23A0826E00297194 /* UITextFieldStub.swift */; };
+		9070AECE23A0848A00297194 /* UIButtonStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9070AECD23A0848A00297194 /* UIButtonStub.swift */; };
+		9070AED023A086E100297194 /* UILabelStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9070AECF23A086E100297194 /* UILabelStub.swift */; };
+		9070AED223A087AF00297194 /* LoginViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9070AED123A087AF00297194 /* LoginViewModelTests.swift */; };
+		9070AED423A087EF00297194 /* MockLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9070AED323A087EF00297194 /* MockLoginViewController.swift */; };
+		9070AED623A088FB00297194 /* MockEmailValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9070AED523A088FB00297194 /* MockEmailValidator.swift */; };
+		9070AED823A0898200297194 /* MockPasswordValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9070AED723A0898200297194 /* MockPasswordValidator.swift */; };
+		9070AEDA23A089C600297194 /* MockLoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9070AED923A089C600297194 /* MockLoginController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,7 +60,6 @@
 		90462793239F104F0094D540 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		90462795239F104F0094D540 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9046279A239F104F0094D540 /* iddogTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iddogTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		9046279E239F104F0094D540 /* iddogTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iddogTests.swift; sourceTree = "<group>"; };
 		904627A0239F104F0094D540 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		904627A5239F104F0094D540 /* iddogUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iddogUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		904627A9239F104F0094D540 /* iddogUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iddogUITests.swift; sourceTree = "<group>"; };
@@ -63,6 +71,16 @@
 		9070AEBD23A07DD300297194 /* LoginViewControllerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewControllerProtocol.swift; sourceTree = "<group>"; };
 		9070AEC023A07DF300297194 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		9070AEC323A07E0600297194 /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
+		9070AEC523A0822900297194 /* LoginViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewControllerTests.swift; sourceTree = "<group>"; };
+		9070AEC823A0824800297194 /* MockLoginViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockLoginViewModel.swift; sourceTree = "<group>"; };
+		9070AECB23A0826E00297194 /* UITextFieldStub.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITextFieldStub.swift; sourceTree = "<group>"; };
+		9070AECD23A0848A00297194 /* UIButtonStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonStub.swift; sourceTree = "<group>"; };
+		9070AECF23A086E100297194 /* UILabelStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabelStub.swift; sourceTree = "<group>"; };
+		9070AED123A087AF00297194 /* LoginViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModelTests.swift; sourceTree = "<group>"; };
+		9070AED323A087EF00297194 /* MockLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockLoginViewController.swift; sourceTree = "<group>"; };
+		9070AED523A088FB00297194 /* MockEmailValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockEmailValidator.swift; sourceTree = "<group>"; };
+		9070AED723A0898200297194 /* MockPasswordValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockPasswordValidator.swift; sourceTree = "<group>"; };
+		9070AED923A089C600297194 /* MockLoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockLoginController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,7 +149,10 @@
 		9046279D239F104F0094D540 /* iddogTests */ = {
 			isa = PBXGroup;
 			children = (
-				9046279E239F104F0094D540 /* iddogTests.swift */,
+				9070AEC723A0824800297194 /* Mocks */,
+				9070AECA23A0826E00297194 /* Stubs */,
+				9070AEC523A0822900297194 /* LoginViewControllerTests.swift */,
+				9070AED123A087AF00297194 /* LoginViewModelTests.swift */,
 				904627A0239F104F0094D540 /* Info.plist */,
 			);
 			path = iddogTests;
@@ -221,6 +242,28 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		9070AEC723A0824800297194 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				9070AEC823A0824800297194 /* MockLoginViewModel.swift */,
+				9070AED323A087EF00297194 /* MockLoginViewController.swift */,
+				9070AED523A088FB00297194 /* MockEmailValidator.swift */,
+				9070AED723A0898200297194 /* MockPasswordValidator.swift */,
+				9070AED923A089C600297194 /* MockLoginController.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		9070AECA23A0826E00297194 /* Stubs */ = {
+			isa = PBXGroup;
+			children = (
+				9070AECB23A0826E00297194 /* UITextFieldStub.swift */,
+				9070AECD23A0848A00297194 /* UIButtonStub.swift */,
+				9070AECF23A086E100297194 /* UILabelStub.swift */,
+			);
+			path = Stubs;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -292,6 +335,7 @@
 					};
 					90462799239F104F0094D540 = {
 						CreatedOnToolsVersion = 11.2.1;
+						LastSwiftMigration = 1130;
 						TestTargetID = 90462780239F104E0094D540;
 					};
 					904627A4239F104F0094D540 = {
@@ -369,7 +413,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9046279F239F104F0094D540 /* iddogTests.swift in Sources */,
+				9070AED223A087AF00297194 /* LoginViewModelTests.swift in Sources */,
+				9070AECC23A0826E00297194 /* UITextFieldStub.swift in Sources */,
+				9070AED423A087EF00297194 /* MockLoginViewController.swift in Sources */,
+				9070AEDA23A089C600297194 /* MockLoginController.swift in Sources */,
+				9070AED623A088FB00297194 /* MockEmailValidator.swift in Sources */,
+				9070AED023A086E100297194 /* UILabelStub.swift in Sources */,
+				9070AECE23A0848A00297194 /* UIButtonStub.swift in Sources */,
+				9070AEC923A0824900297194 /* MockLoginViewModel.swift in Sources */,
+				9070AED823A0898200297194 /* MockPasswordValidator.swift in Sources */,
+				9070AEC623A0822900297194 /* LoginViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -571,9 +624,10 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = iddogTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -581,8 +635,9 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.cesarpaiva.iddogTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iddog.app/iddog";
 			};
 			name = Debug;
@@ -592,9 +647,10 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = iddogTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -602,8 +658,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.cesarpaiva.iddogTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iddog.app/iddog";
 			};
 			name = Release;
@@ -614,6 +670,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = iddogUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -621,8 +678,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.cesarpaiva.iddogUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
 				TEST_TARGET_NAME = iddog;
 			};
 			name = Debug;
@@ -633,6 +690,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = iddogUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -640,8 +698,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.cesarpaiva.iddogUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
 				TEST_TARGET_NAME = iddog;
 			};
 			name = Release;

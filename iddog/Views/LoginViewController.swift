@@ -27,10 +27,7 @@ class LoginViewController: UIViewController {
         if viewModel == nil {
             viewModel = LoginViewModel(view: self)
         }
-        
-        emailTextField.delegate = self
-        passwordTextField.delegate = self
-        
+
         viewModel?.performInitialViewSetup()
     }
 
