@@ -108,6 +108,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		902DE15923A1BAA500058B01 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				9070AEC223A07E0600297194 /* Model */,
+				9070AEAE23A07B3600297194 /* View */,
+				9070AEB223A07D4900297194 /* ViewModel */,
+				9070AEBF23A07DF300297194 /* Controller */,
+				9070AEBC23A07DD300297194 /* Protocol */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		902DE15A23A1BEA000058B01 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				902DE15923A1BAA500058B01 /* Login */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
 		90462778239F104E0094D540 = {
 			isa = PBXGroup;
 			children = (
@@ -131,11 +151,7 @@
 		90462783239F104E0094D540 /* iddog */ = {
 			isa = PBXGroup;
 			children = (
-				9070AEC223A07E0600297194 /* Models */,
-				9070AEAE23A07B3600297194 /* Views */,
-				9070AEB223A07D4900297194 /* ViewModels */,
-				9070AEBF23A07DF300297194 /* Controllers */,
-				9070AEBC23A07DD300297194 /* Protocols */,
+				902DE15A23A1BEA000058B01 /* Features */,
 				9070AEB723A07D9C00297194 /* Validators */,
 				9070AEAB23A07AE600297194 /* Resources */,
 				90462784239F104E0094D540 /* AppDelegate.swift */,
@@ -193,20 +209,20 @@
 			path = Storyboards;
 			sourceTree = "<group>";
 		};
-		9070AEAE23A07B3600297194 /* Views */ = {
+		9070AEAE23A07B3600297194 /* View */ = {
 			isa = PBXGroup;
 			children = (
 				9070AEAF23A07B5700297194 /* LoginViewController.swift */,
 			);
-			path = Views;
+			path = View;
 			sourceTree = "<group>";
 		};
-		9070AEB223A07D4900297194 /* ViewModels */ = {
+		9070AEB223A07D4900297194 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
 				9070AEB523A07D8400297194 /* LoginViewModel.swift */,
 			);
-			path = ViewModels;
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		9070AEB723A07D9C00297194 /* Validators */ = {
@@ -218,28 +234,28 @@
 			path = Validators;
 			sourceTree = "<group>";
 		};
-		9070AEBC23A07DD300297194 /* Protocols */ = {
+		9070AEBC23A07DD300297194 /* Protocol */ = {
 			isa = PBXGroup;
 			children = (
 				9070AEBD23A07DD300297194 /* LoginViewControllerProtocol.swift */,
 			);
-			path = Protocols;
+			path = Protocol;
 			sourceTree = "<group>";
 		};
-		9070AEBF23A07DF300297194 /* Controllers */ = {
+		9070AEBF23A07DF300297194 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
 				9070AEC023A07DF300297194 /* LoginController.swift */,
 			);
-			path = Controllers;
+			path = Controller;
 			sourceTree = "<group>";
 		};
-		9070AEC223A07E0600297194 /* Models */ = {
+		9070AEC223A07E0600297194 /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				9070AEC323A07E0600297194 /* LoginModel.swift */,
 			);
-			path = Models;
+			path = Model;
 			sourceTree = "<group>";
 		};
 		9070AEC723A0824800297194 /* Mocks */ = {
