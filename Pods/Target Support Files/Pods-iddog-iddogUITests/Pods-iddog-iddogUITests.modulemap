@@ -1,0 +1,6 @@
+framework module Pods_iddog_iddogUITests {
+  umbrella header "Pods-iddog-iddogUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
