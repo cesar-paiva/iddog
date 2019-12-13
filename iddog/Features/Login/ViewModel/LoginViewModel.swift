@@ -13,32 +13,29 @@ class LoginViewModel {
     //Variables
     weak var view: LoginViewControllerProtocol?
     var emailValidator: EmailValidator?
-    var passwordValidator: PasswordValidator?
     var emailValidated: Bool
-    var passwordValidated: Bool
-    var loginController: LoginController?
+    var apiService: ApiService?
+    var user: User?
+    private var coreDataService = CoreDataService()
     
     init(view: LoginViewControllerProtocol) {
         self.view = view
         emailValidated = false
-        passwordValidated = false
+        apiService = ApiService()
     }
     
     func performInitialViewSetup() {
         view?.clearEmailTextField()
-        view?.clearPasswordTextField()
         view?.enableLoginButton(false)
     }
     
-    func login(email: String?, password: String?) {
+    func login(email: String?, completion :@escaping (User?, Error?) -> ()) {
         
-        let loginController = self.loginController ?? LoginController(delegate: self)
-        
-        if let email = email, let password = password {
+        if let email = email {
             
-            let model = LoginModel(email: email, password: password)
-            
-            loginController.doLogin(withModel: model)
+            self.apiService?.signup(withEmail: email, completion: { (user, error) in
+                completion(user, error)
+            })
 
         }
     }
@@ -46,11 +43,7 @@ class LoginViewModel {
     func emailDidEndOnExit(){
         view?.hideKeyboard()
     }
-    
-    func passwordDidEndOnExit() {
-        view?.hideKeyboard()
-    }
-    
+
     func emailUpdated(_ value:String?) {
         
         guard let value = value else {
@@ -65,49 +58,20 @@ class LoginViewModel {
             view?.enableLoginButton(false)
             return
         }
-        
-        if passwordValidated == false {
-            view?.enableLoginButton(false)
-            return
-        }
-        
-        view?.enableLoginButton(true)
-        
-    }
-    
-    func passwordUpdated(_ value:String?) {
-        
-        guard let value = value else {
-            view?.enableLoginButton(false)
-            return
-        }
-        
-        let validator = passwordValidator ?? PasswordValidator()
-        passwordValidated = validator.validate(value)
-        
-        if emailValidated == false {
-            view?.enableLoginButton(false)
-            return
-        }
-        
-        if passwordValidated == false {
-            view?.enableLoginButton(false)
-            return
-        }
-        
-        view?.enableLoginButton(true)
-    }
-    
-}
 
-extension LoginViewModel: LoginControllerDelegate {
+        view?.enableLoginButton(true)
+        
+    }
     
-    func loginResult(result: Bool) {
-        if result {
-            view?.login()
-        } else {
-            view?.showErrorMessage()
-        }
+    func save(token: String) {
+        coreDataService.save(token: token)
+    }
+    
+    func fetchToken() -> String {
+
+        let logins = coreDataService.fetchToken()
+        return logins.last?.token ?? String()
+
     }
     
 }

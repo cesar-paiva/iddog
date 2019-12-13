@@ -11,11 +11,15 @@ import UIKit
 class LoginViewController: UIViewController {
 
     @IBOutlet weak var emailTextField: UITextField!
-    @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var errorMessageLabel: UILabel!
     @IBOutlet weak var loginButton: UIButton!
     
+    enum LoginRoute: String {
+        case home
+    }
+    
     var viewModel: LoginViewModel?
+    var router: Router?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,21 +31,29 @@ class LoginViewController: UIViewController {
         if viewModel == nil {
             viewModel = LoginViewModel(view: self)
         }
+        
+        router = LoginRouter()
 
         viewModel?.performInitialViewSetup()
     }
 
 
     @IBAction func login(_ sender: Any) {
-        viewModel?.login(email: emailTextField.text, password: passwordTextField.text)
+        
+        viewModel?.login(email: emailTextField.text, completion: { (user, error) in
+            guard let user = user else {
+                self.showErrorMessage()
+                return
+            }
+            
+            self.viewModel?.save(token: user.token)
+            
+            self.router?.route(to: LoginRoute.home.rawValue, from: self)
+        })
     }
     
     @IBAction func emailDidEndOnExit(_ sender: Any) {
         viewModel?.emailDidEndOnExit()
-    }
-    
-    @IBAction func passwordDidEndOnExit(_ sender: Any) {
-        viewModel?.passwordDidEndOnExit()
     }
 
 }
@@ -53,11 +65,7 @@ extension LoginViewController: UITextFieldDelegate {
         if textField == emailTextField {
             viewModel?.emailUpdated(textField.text)
         }
-        
-        if textField == passwordTextField {
-            viewModel?.passwordUpdated(textField.text)
-        }
-        
+
         return true
     }
     
@@ -68,11 +76,7 @@ extension LoginViewController: LoginViewControllerProtocol {
     func clearEmailTextField() {
         emailTextField.text?.removeAll()
     }
-    
-    func clearPasswordTextField() {
-        passwordTextField.text?.removeAll()
-    }
-    
+
     func enableLoginButton(_ status: Bool) {
         let alpha: CGFloat = status ? 1.0 : 0.5
         loginButton.isEnabled = status
@@ -81,11 +85,6 @@ extension LoginViewController: LoginViewControllerProtocol {
     
     func hideKeyboard() {
         emailTextField.resignFirstResponder()
-        passwordTextField.resignFirstResponder()
-    }
-    
-    func login() {
-        
     }
     
     func showErrorMessage() {

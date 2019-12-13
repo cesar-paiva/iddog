@@ -11,10 +11,8 @@ import Foundation
 protocol LoginViewControllerProtocol: class {
     
     func clearEmailTextField()
-    func clearPasswordTextField()
     func enableLoginButton(_ status: Bool)
     func hideKeyboard()
-    func login()
     func showErrorMessage()
 
 }

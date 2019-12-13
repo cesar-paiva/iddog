@@ -3,10 +3,17 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1DEEEC819E469F1051FCC563 /* Pods_iddogTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B248C9B18783F03479CF2F35 /* Pods_iddogTests.framework */; };
+		7CEB745EDA4804139DADC152 /* Pods_iddog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEFE77AE739F7F9C7446FFE3 /* Pods_iddog.framework */; };
+		9005AEE123A319E700DE034F /* CoreDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9005AEE023A319E700DE034F /* CoreDataService.swift */; };
+		902A640423A23B5100BDFE44 /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 902A640323A23B5100BDFE44 /* ApiService.swift */; };
+		902A640C23A2477400BDFE44 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 902A640B23A2477400BDFE44 /* User.swift */; };
+		902DE15E23A1C08C00058B01 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 902DE15D23A1C08C00058B01 /* Router.swift */; };
+		902DE16423A1C36400058B01 /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 902DE16323A1C36400058B01 /* LoginRouter.swift */; };
 		90462785239F104E0094D540 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90462784239F104E0094D540 /* AppDelegate.swift */; };
 		90462787239F104E0094D540 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90462786239F104E0094D540 /* SceneDelegate.swift */; };
 		9046278C239F104E0094D540 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9046278A239F104E0094D540 /* Main.storyboard */; };
@@ -17,10 +24,7 @@
 		9070AEB023A07D0000297194 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9070AEAF23A07B5700297194 /* LoginViewController.swift */; };
 		9070AEB623A07D8800297194 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9070AEB523A07D8400297194 /* LoginViewModel.swift */; };
 		9070AEBA23A07DAF00297194 /* EmailValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9070AEB923A07DAA00297194 /* EmailValidator.swift */; };
-		9070AEBB23A07DB200297194 /* PasswordValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9070AEB823A07DAA00297194 /* PasswordValidator.swift */; };
 		9070AEBE23A07DD900297194 /* LoginViewControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9070AEBD23A07DD300297194 /* LoginViewControllerProtocol.swift */; };
-		9070AEC123A07DF700297194 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9070AEC023A07DF300297194 /* LoginController.swift */; };
-		9070AEC423A07E2C00297194 /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9070AEC323A07E0600297194 /* LoginModel.swift */; };
 		9070AEC623A0822900297194 /* LoginViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9070AEC523A0822900297194 /* LoginViewControllerTests.swift */; };
 		9070AEC923A0824900297194 /* MockLoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9070AEC823A0824800297194 /* MockLoginViewModel.swift */; };
 		9070AECC23A0826E00297194 /* UITextFieldStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9070AECB23A0826E00297194 /* UITextFieldStub.swift */; };
@@ -29,8 +33,7 @@
 		9070AED223A087AF00297194 /* LoginViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9070AED123A087AF00297194 /* LoginViewModelTests.swift */; };
 		9070AED423A087EF00297194 /* MockLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9070AED323A087EF00297194 /* MockLoginViewController.swift */; };
 		9070AED623A088FB00297194 /* MockEmailValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9070AED523A088FB00297194 /* MockEmailValidator.swift */; };
-		9070AED823A0898200297194 /* MockPasswordValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9070AED723A0898200297194 /* MockPasswordValidator.swift */; };
-		9070AEDA23A089C600297194 /* MockLoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9070AED923A089C600297194 /* MockLoginController.swift */; };
+		C1385081CEF6E03A94AAEC24 /* Pods_iddog_iddogUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 990A5128CC2286BAA227A81F /* Pods_iddog_iddogUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5227B465B5AC60BFF00E7CD4 /* Pods-iddog-iddogUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iddog-iddogUITests.debug.xcconfig"; path = "Target Support Files/Pods-iddog-iddogUITests/Pods-iddog-iddogUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		7ED9C4B414004BB2680226B4 /* Pods-iddog.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iddog.debug.xcconfig"; path = "Target Support Files/Pods-iddog/Pods-iddog.debug.xcconfig"; sourceTree = "<group>"; };
+		9005AEE023A319E700DE034F /* CoreDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataService.swift; sourceTree = "<group>"; };
+		902A640323A23B5100BDFE44 /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
+		902A640B23A2477400BDFE44 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		902DE15D23A1C08C00058B01 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		902DE16323A1C36400058B01 /* LoginRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
 		90462781239F104E0094D540 /* iddog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iddog.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		90462784239F104E0094D540 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		90462786239F104E0094D540 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -66,11 +76,8 @@
 		904627AB239F104F0094D540 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9070AEAF23A07B5700297194 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		9070AEB523A07D8400297194 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
-		9070AEB823A07DAA00297194 /* PasswordValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordValidator.swift; sourceTree = "<group>"; };
 		9070AEB923A07DAA00297194 /* EmailValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailValidator.swift; sourceTree = "<group>"; };
 		9070AEBD23A07DD300297194 /* LoginViewControllerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewControllerProtocol.swift; sourceTree = "<group>"; };
-		9070AEC023A07DF300297194 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
-		9070AEC323A07E0600297194 /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
 		9070AEC523A0822900297194 /* LoginViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewControllerTests.swift; sourceTree = "<group>"; };
 		9070AEC823A0824800297194 /* MockLoginViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockLoginViewModel.swift; sourceTree = "<group>"; };
 		9070AECB23A0826E00297194 /* UITextFieldStub.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITextFieldStub.swift; sourceTree = "<group>"; };
@@ -79,8 +86,13 @@
 		9070AED123A087AF00297194 /* LoginViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModelTests.swift; sourceTree = "<group>"; };
 		9070AED323A087EF00297194 /* MockLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockLoginViewController.swift; sourceTree = "<group>"; };
 		9070AED523A088FB00297194 /* MockEmailValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockEmailValidator.swift; sourceTree = "<group>"; };
-		9070AED723A0898200297194 /* MockPasswordValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockPasswordValidator.swift; sourceTree = "<group>"; };
-		9070AED923A089C600297194 /* MockLoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockLoginController.swift; sourceTree = "<group>"; };
+		947AC1F84C80D992F5B3A7BF /* Pods-iddog-iddogUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iddog-iddogUITests.release.xcconfig"; path = "Target Support Files/Pods-iddog-iddogUITests/Pods-iddog-iddogUITests.release.xcconfig"; sourceTree = "<group>"; };
+		990A5128CC2286BAA227A81F /* Pods_iddog_iddogUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iddog_iddogUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B248C9B18783F03479CF2F35 /* Pods_iddogTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iddogTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B73FA3F94926F6EC2C30C04D /* Pods-iddog.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iddog.release.xcconfig"; path = "Target Support Files/Pods-iddog/Pods-iddog.release.xcconfig"; sourceTree = "<group>"; };
+		C4DDF64DB723F8DF932DD349 /* Pods-iddogTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iddogTests.debug.xcconfig"; path = "Target Support Files/Pods-iddogTests/Pods-iddogTests.debug.xcconfig"; sourceTree = "<group>"; };
+		CEFE77AE739F7F9C7446FFE3 /* Pods_iddog.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iddog.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9020A5524428ADDF56FF3AC /* Pods-iddogTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iddogTests.release.xcconfig"; path = "Target Support Files/Pods-iddogTests/Pods-iddogTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +100,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7CEB745EDA4804139DADC152 /* Pods_iddog.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,6 +108,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1DEEEC819E469F1051FCC563 /* Pods_iddogTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,20 +116,43 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1385081CEF6E03A94AAEC24 /* Pods_iddog_iddogUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5F7CC2AFFC3E71DA7A42C46A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7ED9C4B414004BB2680226B4 /* Pods-iddog.debug.xcconfig */,
+				B73FA3F94926F6EC2C30C04D /* Pods-iddog.release.xcconfig */,
+				5227B465B5AC60BFF00E7CD4 /* Pods-iddog-iddogUITests.debug.xcconfig */,
+				947AC1F84C80D992F5B3A7BF /* Pods-iddog-iddogUITests.release.xcconfig */,
+				C4DDF64DB723F8DF932DD349 /* Pods-iddogTests.debug.xcconfig */,
+				D9020A5524428ADDF56FF3AC /* Pods-iddogTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		902A640223A23B2E00BDFE44 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				902A640323A23B5100BDFE44 /* ApiService.swift */,
+				9005AEE023A319E700DE034F /* CoreDataService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
 		902DE15923A1BAA500058B01 /* Login */ = {
 			isa = PBXGroup;
 			children = (
 				9070AEC223A07E0600297194 /* Model */,
 				9070AEAE23A07B3600297194 /* View */,
 				9070AEB223A07D4900297194 /* ViewModel */,
-				9070AEBF23A07DF300297194 /* Controller */,
 				9070AEBC23A07DD300297194 /* Protocol */,
+				902DE16223A1C32100058B01 /* Router */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -128,6 +165,22 @@
 			path = Features;
 			sourceTree = "<group>";
 		};
+		902DE15C23A1C04C00058B01 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				902DE15D23A1C08C00058B01 /* Router.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		902DE16223A1C32100058B01 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				902DE16323A1C36400058B01 /* LoginRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
 		90462778239F104E0094D540 = {
 			isa = PBXGroup;
 			children = (
@@ -135,6 +188,8 @@
 				9046279D239F104F0094D540 /* iddogTests */,
 				904627A8239F104F0094D540 /* iddogUITests */,
 				90462782239F104E0094D540 /* Products */,
+				5F7CC2AFFC3E71DA7A42C46A /* Pods */,
+				EEA6FEC085E074C3F93A51E9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -151,9 +206,11 @@
 		90462783239F104E0094D540 /* iddog */ = {
 			isa = PBXGroup;
 			children = (
+				902A640223A23B2E00BDFE44 /* Service */,
 				902DE15A23A1BEA000058B01 /* Features */,
-				9070AEB723A07D9C00297194 /* Validators */,
 				9070AEAB23A07AE600297194 /* Resources */,
+				902DE15C23A1C04C00058B01 /* Router */,
+				9070AEB723A07D9C00297194 /* Validators */,
 				90462784239F104E0094D540 /* AppDelegate.swift */,
 				90462786239F104E0094D540 /* SceneDelegate.swift */,
 				90462795239F104F0094D540 /* Info.plist */,
@@ -229,7 +286,6 @@
 			isa = PBXGroup;
 			children = (
 				9070AEB923A07DAA00297194 /* EmailValidator.swift */,
-				9070AEB823A07DAA00297194 /* PasswordValidator.swift */,
 			);
 			path = Validators;
 			sourceTree = "<group>";
@@ -242,18 +298,10 @@
 			path = Protocol;
 			sourceTree = "<group>";
 		};
-		9070AEBF23A07DF300297194 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				9070AEC023A07DF300297194 /* LoginController.swift */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
 		9070AEC223A07E0600297194 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				9070AEC323A07E0600297194 /* LoginModel.swift */,
+				902A640B23A2477400BDFE44 /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -264,8 +312,6 @@
 				9070AEC823A0824800297194 /* MockLoginViewModel.swift */,
 				9070AED323A087EF00297194 /* MockLoginViewController.swift */,
 				9070AED523A088FB00297194 /* MockEmailValidator.swift */,
-				9070AED723A0898200297194 /* MockPasswordValidator.swift */,
-				9070AED923A089C600297194 /* MockLoginController.swift */,
 			);
 			path = Mocks;
 			sourceTree = "<group>";
@@ -280,6 +326,16 @@
 			path = Stubs;
 			sourceTree = "<group>";
 		};
+		EEA6FEC085E074C3F93A51E9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CEFE77AE739F7F9C7446FFE3 /* Pods_iddog.framework */,
+				990A5128CC2286BAA227A81F /* Pods_iddog_iddogUITests.framework */,
+				B248C9B18783F03479CF2F35 /* Pods_iddogTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -287,9 +343,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 904627AE239F104F0094D540 /* Build configuration list for PBXNativeTarget "iddog" */;
 			buildPhases = (
+				54BD0011E185A221AB6CD023 /* [CP] Check Pods Manifest.lock */,
 				9046277D239F104E0094D540 /* Sources */,
 				9046277E239F104E0094D540 /* Frameworks */,
 				9046277F239F104E0094D540 /* Resources */,
+				46CA6FEFD5CE5E4B1A396359 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -304,6 +362,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 904627B1239F104F0094D540 /* Build configuration list for PBXNativeTarget "iddogTests" */;
 			buildPhases = (
+				08172F3CA4A705F76E218C55 /* [CP] Check Pods Manifest.lock */,
 				90462796239F104F0094D540 /* Sources */,
 				90462797239F104F0094D540 /* Frameworks */,
 				90462798239F104F0094D540 /* Resources */,
@@ -322,9 +381,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 904627B4239F104F0094D540 /* Build configuration list for PBXNativeTarget "iddogUITests" */;
 			buildPhases = (
+				97F6F6676F5DB1F3F3EF90DA /* [CP] Check Pods Manifest.lock */,
 				904627A1239F104F0094D540 /* Sources */,
 				904627A2239F104F0094D540 /* Frameworks */,
 				904627A3239F104F0094D540 /* Resources */,
+				FE9702757FCD1FE16FACDE75 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -407,20 +468,125 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		08172F3CA4A705F76E218C55 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iddogTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		46CA6FEFD5CE5E4B1A396359 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iddog/Pods-iddog-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iddog/Pods-iddog-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iddog/Pods-iddog-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		54BD0011E185A221AB6CD023 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iddog-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		97F6F6676F5DB1F3F3EF90DA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iddog-iddogUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FE9702757FCD1FE16FACDE75 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iddog-iddogUITests/Pods-iddog-iddogUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iddog-iddogUITests/Pods-iddog-iddogUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iddog-iddogUITests/Pods-iddog-iddogUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		9046277D239F104E0094D540 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9070AEBB23A07DB200297194 /* PasswordValidator.swift in Sources */,
+				9005AEE123A319E700DE034F /* CoreDataService.swift in Sources */,
+				902DE15E23A1C08C00058B01 /* Router.swift in Sources */,
 				9070AEB023A07D0000297194 /* LoginViewController.swift in Sources */,
 				9070AEBE23A07DD900297194 /* LoginViewControllerProtocol.swift in Sources */,
+				902A640C23A2477400BDFE44 /* User.swift in Sources */,
 				9046278F239F104E0094D540 /* iddog.xcdatamodeld in Sources */,
-				9070AEC123A07DF700297194 /* LoginController.swift in Sources */,
-				9070AEC423A07E2C00297194 /* LoginModel.swift in Sources */,
+				902A640423A23B5100BDFE44 /* ApiService.swift in Sources */,
 				90462785239F104E0094D540 /* AppDelegate.swift in Sources */,
 				9070AEB623A07D8800297194 /* LoginViewModel.swift in Sources */,
 				90462787239F104E0094D540 /* SceneDelegate.swift in Sources */,
+				902DE16423A1C36400058B01 /* LoginRouter.swift in Sources */,
 				9070AEBA23A07DAF00297194 /* EmailValidator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -432,12 +598,10 @@
 				9070AED223A087AF00297194 /* LoginViewModelTests.swift in Sources */,
 				9070AECC23A0826E00297194 /* UITextFieldStub.swift in Sources */,
 				9070AED423A087EF00297194 /* MockLoginViewController.swift in Sources */,
-				9070AEDA23A089C600297194 /* MockLoginController.swift in Sources */,
 				9070AED623A088FB00297194 /* MockEmailValidator.swift in Sources */,
 				9070AED023A086E100297194 /* UILabelStub.swift in Sources */,
 				9070AECE23A0848A00297194 /* UIButtonStub.swift in Sources */,
 				9070AEC923A0824900297194 /* MockLoginViewModel.swift in Sources */,
-				9070AED823A0898200297194 /* MockPasswordValidator.swift in Sources */,
 				9070AEC623A0822900297194 /* LoginViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -601,6 +765,7 @@
 		};
 		904627AF239F104F0094D540 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7ED9C4B414004BB2680226B4 /* Pods-iddog.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -619,6 +784,7 @@
 		};
 		904627B0239F104F0094D540 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B73FA3F94926F6EC2C30C04D /* Pods-iddog.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -637,6 +803,7 @@
 		};
 		904627B2239F104F0094D540 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C4DDF64DB723F8DF932DD349 /* Pods-iddogTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -660,6 +827,7 @@
 		};
 		904627B3239F104F0094D540 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D9020A5524428ADDF56FF3AC /* Pods-iddogTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -682,6 +850,7 @@
 		};
 		904627B5239F104F0094D540 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5227B465B5AC60BFF00E7CD4 /* Pods-iddog-iddogUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -702,6 +871,7 @@
 		};
 		904627B6239F104F0094D540 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 947AC1F84C80D992F5B3A7BF /* Pods-iddog-iddogUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

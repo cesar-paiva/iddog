@@ -12,16 +12,11 @@ import XCTest
 class MockLoginViewController: LoginViewControllerProtocol {
 
     var expectationForClearEmailField: XCTestExpectation?
-    var expectationForClearPasswordField: XCTestExpectation?
     var expectationForEnableLoginButton: (XCTestExpectation, Bool)?
     var expectationForHideKeyboard: XCTestExpectation?
 
     func clearEmailTextField() {
         expectationForClearEmailField?.fulfill()
-    }
-    
-    func clearPasswordTextField() {
-        expectationForClearPasswordField?.fulfill()
     }
     
     func enableLoginButton(_ status: Bool) {
