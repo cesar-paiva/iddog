@@ -16,7 +16,12 @@ class HomeCollectionViewCell: UICollectionViewCell {
     
     func setup(withImageURL url: String) {
         
-        viewModel?.downloadAndCacheImage(forURL: url, completion: { image in
+        if let image = viewModel?.cachedImage(forURL: url) {
+            imageView.image = image
+            return
+        }
+        
+        viewModel?.download(forURL: url, completion: { image in
             self.imageView.image = image
         })
         
