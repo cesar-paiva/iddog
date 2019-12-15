@@ -8,18 +8,12 @@
 
 import Foundation
 import Alamofire
-import AlamofireImage
 
 class ApiService {
     
     static let shared = ApiService()
     
     private var baseURL = "https://api-iddog.idwall.co"
-    
-    private let imageCache = AutoPurgingImageCache(
-        memoryCapacity: UInt64(100).megabytes(),
-        preferredMemoryUsageAfterPurge: UInt64(60).megabytes()
-    )
     
     func signup(withEmail email: String, completion :@escaping (User?, Error?) -> Void) {
         
@@ -57,13 +51,13 @@ class ApiService {
             "Content-type": "application/json",
             "Authorization": token
         ]
-        var parameters: Parameters = [:]
+        var parameters: Parameters?
         
         if let category = category {
             parameters = ["category": category]
         }
         
-        Alamofire.request(url, method: .get, parameters: parameters, encoding: JSONEncoding.default, headers: headers).responseJSON { response in
+        Alamofire.request(url, method: .get, parameters: parameters, encoding: URLEncoding.default, headers: headers).responseJSON { response in
             
             switch response.result {
             case .success(_):
@@ -81,21 +75,12 @@ class ApiService {
         }
     }
     
-    func downloadAndCacheImage(withURL url: String, completion: @escaping(UIImage) -> Void) {
+    func download(withURL url: String, completion: @escaping(UIImage) -> Void) {
         
         Alamofire.request(url, method: .get).responseImage { response in
             guard let image = response.result.value else { return }
             completion(image)
-            self.cache(image, for: url)
         }
-    }
-    
-    private func cache(_ image: Image, for url: String) {
-        imageCache.add(image, withIdentifier: url)
-    }
-    
-    func cachedImage(for url: String) -> Image? {
-        return imageCache.image(withIdentifier: url)
     }
     
     
