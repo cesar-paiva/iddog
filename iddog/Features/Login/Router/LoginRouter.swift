@@ -10,7 +10,7 @@ import UIKit
 
 class LoginRouter: Router {
     
-    func route(to routeID: String, from context: UIViewController) {
+    func route(to routeID: String, from controller: UIViewController) {
         
         guard let route = LoginViewController.LoginRoute(rawValue: routeID) else {
             return
@@ -18,7 +18,9 @@ class LoginRouter: Router {
         
         switch route {
         case .home:
-            break
+            if let homeViewController = controller.storyboard?.instantiateViewController(withIdentifier: "HomeViewController") {
+                controller.present(homeViewController, animated: true, completion: nil)
+            }
         }
         
     }

@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3B5-0m-MzS">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -17,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="r6a-CX-dFw">
-                                <rect key="frame" x="16" y="292" width="343" height="34"/>
+                                <rect key="frame" x="16" y="336" width="343" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
@@ -26,14 +27,14 @@
                                 </connections>
                             </textField>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dog-bone" translatesAutoresizingMaskIntoConstraints="NO" id="o7z-Gc-X6K">
-                                <rect key="frame" x="89.5" y="48" width="196" height="196"/>
+                                <rect key="frame" x="89.5" y="92" width="196" height="196"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="196" id="Ghu-zZ-jCD"/>
                                     <constraint firstAttribute="width" constant="196" id="ciu-Ve-N7w"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mjC-qc-U0r">
-                                <rect key="frame" x="16" y="371" width="343" height="48"/>
+                                <rect key="frame" x="16" y="415" width="343" height="48"/>
                                 <color key="backgroundColor" red="0.32549019610000002" green="0.0" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="48" id="ryr-s4-eEj"/>
@@ -46,8 +47,8 @@
                                     <action selector="login:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3Gn-Og-6u9"/>
                                 </connections>
                             </button>
-                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password is invalid" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z5p-6d-Dfe">
-                                <rect key="frame" x="16" y="334" width="343" height="21"/>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email is invalid" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z5p-6d-Dfe">
+                                <rect key="frame" x="16" y="378" width="343" height="21"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
                                 <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -69,6 +70,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="ciu-Ly-d2a"/>
                     <connections>
                         <outlet property="emailTextField" destination="r6a-CX-dFw" id="9RS-x7-SwX"/>
                         <outlet property="errorMessageLabel" destination="Z5p-6d-Dfe" id="sve-XP-iGr"/>
@@ -77,7 +79,111 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="139" y="118"/>
+            <point key="canvasLocation" x="1077.5999999999999" y="117.39130434782609"/>
+        </scene>
+        <!--Home View Controller-->
+        <scene sceneID="BFy-BN-gui">
+            <objects>
+                <viewController storyboardIdentifier="HomeViewController" id="lHc-YG-YQR" customClass="HomeViewController" customModule="iddog" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Sx9-Ma-CSR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="cFe-rr-Xiy">
+                                <rect key="frame" x="16" y="79" width="343" height="572"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Jqp-5K-96T">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="DogCell" id="sx6-tQ-o62" customClass="HomeCollectionViewCell" customModule="iddog" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="vRc-hb-UmX">
+                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="IAV-GD-mk6">
+                                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="IAV-GD-mk6" firstAttribute="leading" secondItem="vRc-hb-UmX" secondAttribute="leading" id="3lb-dS-v9l"/>
+                                                <constraint firstItem="IAV-GD-mk6" firstAttribute="top" secondItem="vRc-hb-UmX" secondAttribute="top" id="FH6-Na-8jI"/>
+                                                <constraint firstAttribute="trailing" secondItem="IAV-GD-mk6" secondAttribute="trailing" id="LRA-bJ-nbH"/>
+                                                <constraint firstAttribute="bottom" secondItem="IAV-GD-mk6" secondAttribute="bottom" id="iqy-Fu-JYF"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <connections>
+                                            <outlet property="imageView" destination="IAV-GD-mk6" id="PCL-lH-Eyt"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="lHc-YG-YQR" id="MGB-ah-6Fe"/>
+                                    <outlet property="delegate" destination="lHc-YG-YQR" id="xdf-7o-UPf"/>
+                                </connections>
+                            </collectionView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="X5s-0R-rVh">
+                                <rect key="frame" x="16" y="16" width="343" height="32"/>
+                                <segments>
+                                    <segment title="husky"/>
+                                    <segment title="labrador"/>
+                                    <segment title="hound"/>
+                                    <segment title="pug"/>
+                                </segments>
+                                <connections>
+                                    <action selector="dogBreedValueChanged:" destination="lHc-YG-YQR" eventType="valueChanged" id="CpF-el-hG0"/>
+                                </connections>
+                            </segmentedControl>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="5te-hd-JRw">
+                                <rect key="frame" x="177.5" y="323.5" width="20" height="20"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="X5s-0R-rVh" firstAttribute="top" secondItem="RE3-Au-E8b" secondAttribute="top" constant="16" id="1h6-eF-1sl"/>
+                            <constraint firstItem="RE3-Au-E8b" firstAttribute="bottom" secondItem="cFe-rr-Xiy" secondAttribute="bottom" constant="16" id="3R2-yb-LrI"/>
+                            <constraint firstItem="cFe-rr-Xiy" firstAttribute="leading" secondItem="RE3-Au-E8b" secondAttribute="leading" constant="16" id="45U-Qw-RWE"/>
+                            <constraint firstItem="5te-hd-JRw" firstAttribute="centerX" secondItem="Sx9-Ma-CSR" secondAttribute="centerX" id="CkH-Nd-Acl"/>
+                            <constraint firstItem="RE3-Au-E8b" firstAttribute="trailing" secondItem="cFe-rr-Xiy" secondAttribute="trailing" constant="16" id="OAX-Zx-BkS"/>
+                            <constraint firstItem="5te-hd-JRw" firstAttribute="centerY" secondItem="Sx9-Ma-CSR" secondAttribute="centerY" id="Ru6-Oe-HFM"/>
+                            <constraint firstItem="RE3-Au-E8b" firstAttribute="trailing" secondItem="X5s-0R-rVh" secondAttribute="trailing" constant="16" id="cV0-OS-249"/>
+                            <constraint firstItem="cFe-rr-Xiy" firstAttribute="top" secondItem="X5s-0R-rVh" secondAttribute="bottom" constant="32" id="hTf-Ke-awr"/>
+                            <constraint firstItem="X5s-0R-rVh" firstAttribute="leading" secondItem="RE3-Au-E8b" secondAttribute="leading" constant="16" id="pxZ-iE-rFY"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="RE3-Au-E8b"/>
+                    </view>
+                    <connections>
+                        <outlet property="activityIndicator" destination="5te-hd-JRw" id="pcE-4K-Osd"/>
+                        <outlet property="collectionView" destination="cFe-rr-Xiy" id="RQu-Xu-hcO"/>
+                        <outlet property="segmentedControl" destination="X5s-0R-rVh" id="bvT-eW-51v"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VXR-BI-zW7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1748" y="119.1904047976012"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="xLs-9l-tSz">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="3B5-0m-MzS" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="6wv-GQ-7t3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="NpL-Ii-R4q"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ia1-GX-dNK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="138.40000000000001" y="117.39130434782609"/>
         </scene>
     </scenes>
     <resources>

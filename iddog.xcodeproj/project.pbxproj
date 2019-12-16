@@ -10,6 +10,10 @@
 		1DEEEC819E469F1051FCC563 /* Pods_iddogTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B248C9B18783F03479CF2F35 /* Pods_iddogTests.framework */; };
 		7CEB745EDA4804139DADC152 /* Pods_iddog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEFE77AE739F7F9C7446FFE3 /* Pods_iddog.framework */; };
 		9005AEE123A319E700DE034F /* CoreDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9005AEE023A319E700DE034F /* CoreDataService.swift */; };
+		900CD94023A554DF00240942 /* Dog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 900CD93F23A554DF00240942 /* Dog.swift */; };
+		900CD94323A555AA00240942 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 900CD94223A555AA00240942 /* HomeViewModel.swift */; };
+		900CD94723A56CA700240942 /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 900CD94623A56CA700240942 /* HomeCollectionViewCell.swift */; };
+		901AB7FC23A333DF0089A318 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901AB7FB23A333DF0089A318 /* HomeViewController.swift */; };
 		902A640423A23B5100BDFE44 /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 902A640323A23B5100BDFE44 /* ApiService.swift */; };
 		902A640C23A2477400BDFE44 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 902A640B23A2477400BDFE44 /* User.swift */; };
 		902DE15E23A1C08C00058B01 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 902DE15D23A1C08C00058B01 /* Router.swift */; };
@@ -33,6 +37,7 @@
 		9070AED223A087AF00297194 /* LoginViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9070AED123A087AF00297194 /* LoginViewModelTests.swift */; };
 		9070AED423A087EF00297194 /* MockLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9070AED323A087EF00297194 /* MockLoginViewController.swift */; };
 		9070AED623A088FB00297194 /* MockEmailValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9070AED523A088FB00297194 /* MockEmailValidator.swift */; };
+		90FF732923A5B07600901FDF /* UInt64+megabytes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90FF732823A5B07600901FDF /* UInt64+megabytes.swift */; };
 		C1385081CEF6E03A94AAEC24 /* Pods_iddog_iddogUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 990A5128CC2286BAA227A81F /* Pods_iddog_iddogUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -57,6 +62,10 @@
 		5227B465B5AC60BFF00E7CD4 /* Pods-iddog-iddogUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iddog-iddogUITests.debug.xcconfig"; path = "Target Support Files/Pods-iddog-iddogUITests/Pods-iddog-iddogUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		7ED9C4B414004BB2680226B4 /* Pods-iddog.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iddog.debug.xcconfig"; path = "Target Support Files/Pods-iddog/Pods-iddog.debug.xcconfig"; sourceTree = "<group>"; };
 		9005AEE023A319E700DE034F /* CoreDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataService.swift; sourceTree = "<group>"; };
+		900CD93F23A554DF00240942 /* Dog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dog.swift; sourceTree = "<group>"; };
+		900CD94223A555AA00240942 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		900CD94623A56CA700240942 /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
+		901AB7FB23A333DF0089A318 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		902A640323A23B5100BDFE44 /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
 		902A640B23A2477400BDFE44 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		902DE15D23A1C08C00058B01 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
@@ -86,6 +95,7 @@
 		9070AED123A087AF00297194 /* LoginViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModelTests.swift; sourceTree = "<group>"; };
 		9070AED323A087EF00297194 /* MockLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockLoginViewController.swift; sourceTree = "<group>"; };
 		9070AED523A088FB00297194 /* MockEmailValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockEmailValidator.swift; sourceTree = "<group>"; };
+		90FF732823A5B07600901FDF /* UInt64+megabytes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UInt64+megabytes.swift"; sourceTree = "<group>"; };
 		947AC1F84C80D992F5B3A7BF /* Pods-iddog-iddogUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iddog-iddogUITests.release.xcconfig"; path = "Target Support Files/Pods-iddog-iddogUITests/Pods-iddog-iddogUITests.release.xcconfig"; sourceTree = "<group>"; };
 		990A5128CC2286BAA227A81F /* Pods_iddog_iddogUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iddog_iddogUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B248C9B18783F03479CF2F35 /* Pods_iddogTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iddogTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -136,13 +146,48 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		902A640223A23B2E00BDFE44 /* Service */ = {
+		900CD94123A5559900240942 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				900CD94223A555AA00240942 /* HomeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		9016B67C23A54826004F795D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				900CD93F23A554DF00240942 /* Dog.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		901AB7F923A3338C0089A318 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				9016B67C23A54826004F795D /* Model */,
+				901AB7FA23A333AD0089A318 /* View */,
+				900CD94123A5559900240942 /* ViewModel */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		901AB7FA23A333AD0089A318 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				901AB7FB23A333DF0089A318 /* HomeViewController.swift */,
+				900CD94623A56CA700240942 /* HomeCollectionViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		902A640223A23B2E00BDFE44 /* Services */ = {
 			isa = PBXGroup;
 			children = (
 				902A640323A23B5100BDFE44 /* ApiService.swift */,
 				9005AEE023A319E700DE034F /* CoreDataService.swift */,
 			);
-			path = Service;
+			path = Services;
 			sourceTree = "<group>";
 		};
 		902DE15923A1BAA500058B01 /* Login */ = {
@@ -161,6 +206,7 @@
 			isa = PBXGroup;
 			children = (
 				902DE15923A1BAA500058B01 /* Login */,
+				901AB7F923A3338C0089A318 /* Home */,
 			);
 			path = Features;
 			sourceTree = "<group>";
@@ -206,7 +252,8 @@
 		90462783239F104E0094D540 /* iddog */ = {
 			isa = PBXGroup;
 			children = (
-				902A640223A23B2E00BDFE44 /* Service */,
+				90FF732723A5B04800901FDF /* Extensions */,
+				902A640223A23B2E00BDFE44 /* Services */,
 				902DE15A23A1BEA000058B01 /* Features */,
 				9070AEAB23A07AE600297194 /* Resources */,
 				902DE15C23A1C04C00058B01 /* Router */,
@@ -324,6 +371,14 @@
 				9070AECF23A086E100297194 /* UILabelStub.swift */,
 			);
 			path = Stubs;
+			sourceTree = "<group>";
+		};
+		90FF732723A5B04800901FDF /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				90FF732823A5B07600901FDF /* UInt64+megabytes.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		EEA6FEC085E074C3F93A51E9 /* Frameworks */ = {
@@ -576,17 +631,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				900CD94023A554DF00240942 /* Dog.swift in Sources */,
 				9005AEE123A319E700DE034F /* CoreDataService.swift in Sources */,
 				902DE15E23A1C08C00058B01 /* Router.swift in Sources */,
 				9070AEB023A07D0000297194 /* LoginViewController.swift in Sources */,
 				9070AEBE23A07DD900297194 /* LoginViewControllerProtocol.swift in Sources */,
 				902A640C23A2477400BDFE44 /* User.swift in Sources */,
 				9046278F239F104E0094D540 /* iddog.xcdatamodeld in Sources */,
+				900CD94723A56CA700240942 /* HomeCollectionViewCell.swift in Sources */,
 				902A640423A23B5100BDFE44 /* ApiService.swift in Sources */,
 				90462785239F104E0094D540 /* AppDelegate.swift in Sources */,
 				9070AEB623A07D8800297194 /* LoginViewModel.swift in Sources */,
 				90462787239F104E0094D540 /* SceneDelegate.swift in Sources */,
 				902DE16423A1C36400058B01 /* LoginRouter.swift in Sources */,
+				90FF732923A5B07600901FDF /* UInt64+megabytes.swift in Sources */,
+				901AB7FC23A333DF0089A318 /* HomeViewController.swift in Sources */,
+				900CD94323A555AA00240942 /* HomeViewModel.swift in Sources */,
 				9070AEBA23A07DAF00297194 /* EmailValidator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
