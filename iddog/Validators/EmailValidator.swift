@@ -30,7 +30,7 @@ class EmailValidator {
             return false
         }
         
-        guard let regexValidator = try? NSRegularExpression(pattern: "([A-Z0-9._%+-]+@[A-Z0-9.-]+\\.[A-Z]{2,4})", options: .caseInsensitive) else {
+        guard let regexValidator = try? NSRegularExpression(pattern: "([A-Z0-9._%+-]+@[A-Z0-9.-]+\\.[A-Z]{1,4})", options: .caseInsensitive) else {
             return false
         }
         
