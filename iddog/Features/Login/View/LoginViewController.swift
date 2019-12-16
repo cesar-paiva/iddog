@@ -13,6 +13,7 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var errorMessageLabel: UILabel!
     @IBOutlet weak var loginButton: UIButton!
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
     enum LoginRoute: String {
         case home
@@ -40,7 +41,10 @@ class LoginViewController: UIViewController {
 
     @IBAction func login(_ sender: Any) {
         
+        activityIndicator.startAnimating()
         viewModel?.login(email: emailTextField.text, completion: { (user, error) in
+            
+            self.activityIndicator.stopAnimating()
             guard let user = user else {
                 self.showErrorMessage()
                 return

@@ -19,7 +19,7 @@
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="r6a-CX-dFw">
                                 <rect key="frame" x="16" y="292" width="343" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" textContentType="email"/>
                                 <connections>
                                     <action selector="emailDidEndOnExit:" destination="BYZ-38-t0r" eventType="editingDidEndOnExit" id="5tI-op-EHU"/>
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="Dxo-Wg-NVZ"/>
@@ -46,17 +46,21 @@
                                     <action selector="login:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3Gn-Og-6u9"/>
                                 </connections>
                             </button>
-                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password is invalid" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z5p-6d-Dfe">
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email is invalid" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z5p-6d-Dfe">
                                 <rect key="frame" x="16" y="334" width="343" height="21"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
                                 <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="RFg-za-uXX">
+                                <rect key="frame" x="177.5" y="323.5" width="20" height="20"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="Z5p-6d-Dfe" firstAttribute="top" secondItem="r6a-CX-dFw" secondAttribute="bottom" constant="8" id="25x-Ex-SaV"/>
                             <constraint firstItem="o7z-Gc-X6K" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="48" id="FPf-53-8KM"/>
+                            <constraint firstItem="RFg-za-uXX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="H7T-vS-645"/>
                             <constraint firstItem="mjC-qc-U0r" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Hah-Jp-Qkl"/>
                             <constraint firstItem="mjC-qc-U0r" firstAttribute="top" secondItem="Z5p-6d-Dfe" secondAttribute="bottom" constant="16" id="I94-Bl-GhJ"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="mjC-qc-U0r" secondAttribute="trailing" constant="16" id="R9T-Zk-N6y"/>
@@ -64,12 +68,14 @@
                             <constraint firstItem="Z5p-6d-Dfe" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="hWN-eP-12f"/>
                             <constraint firstItem="r6a-CX-dFw" firstAttribute="top" secondItem="o7z-Gc-X6K" secondAttribute="bottom" constant="48" id="lmh-XA-saq"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="r6a-CX-dFw" secondAttribute="trailing" constant="16" id="twk-h6-Ky4"/>
+                            <constraint firstItem="RFg-za-uXX" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="xiy-K6-76k"/>
                             <constraint firstItem="o7z-Gc-X6K" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xqo-gO-xMJ"/>
                             <constraint firstItem="r6a-CX-dFw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="yoF-qM-Rwn"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="activityIndicator" destination="RFg-za-uXX" id="b0F-eU-RGF"/>
                         <outlet property="emailTextField" destination="r6a-CX-dFw" id="9RS-x7-SwX"/>
                         <outlet property="errorMessageLabel" destination="Z5p-6d-Dfe" id="sve-XP-iGr"/>
                         <outlet property="loginButton" destination="mjC-qc-U0r" id="iIq-M5-k6P"/>
