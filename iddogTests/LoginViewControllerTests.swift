@@ -64,8 +64,10 @@ class LoginViewControllerTests: XCTestCase {
         let expectation = self.expectation(description: "expected login() to be called")
         
         let emailTextFieldStub = UITextFieldStub(text: validEmail)
+        let activityIndicatorStub = UIActivityIndicatorViewStub()
 
         sut.emailTextField = emailTextFieldStub
+        sut.activityIndicator = activityIndicatorStub
 
         viewModel.loginExpectation = (expectation, expectedEmail: validEmail)
         
