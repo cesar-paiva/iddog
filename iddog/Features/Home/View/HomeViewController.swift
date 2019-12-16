@@ -65,6 +65,10 @@ class HomeViewController: UIViewController {
         self.collectionView?.collectionViewLayout = layout
     }
     
+    @objc func dismissFullscreenImage(_ sender: UITapGestureRecognizer) {
+        sender.view?.removeFromSuperview()
+    }
+    
 }
 
 extension HomeViewController: UICollectionViewDataSource {
@@ -88,6 +92,19 @@ extension HomeViewController: UICollectionViewDataSource {
 extension HomeViewController: UICollectionViewDelegate {
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        let image = viewModel.cachedImage(forURL: images[indexPath.row])
+        
+        let imageView = UIImageView(image: image)
+        imageView.frame = self.view.frame
+        imageView.backgroundColor = .black
+        imageView.contentMode = .scaleAspectFit
+        imageView.isUserInteractionEnabled = true
+
+        let tap = UITapGestureRecognizer(target: self, action: #selector(dismissFullscreenImage))
+        imageView.addGestureRecognizer(tap)
+
+        self.view.addSubview(imageView)
         
     }
     
