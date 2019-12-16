@@ -6,12 +6,18 @@
 //  Copyright © 2019 Cesar Paiva. All rights reserved.
 //
 
-import UIKit
+import Foundation
+import AlamofireImage
 
 class HomeViewModel {
     
     private lazy var apiService = ApiService()
     private var coreDataService = CoreDataService()
+    
+    private let imageCache = AutoPurgingImageCache(
+        memoryCapacity: UInt64(100).megabytes(),
+        preferredMemoryUsageAfterPurge: UInt64(60).megabytes()
+    )
 
     func listDogs(forCategory category: String?, completion :@escaping ([String]?, Error?) -> ()) {
         
@@ -28,12 +34,21 @@ class HomeViewModel {
         return logins.last?.token
     }
     
-    func downloadAndCacheImage(forURL url: String, completion: @escaping(UIImage) -> ()) {
+    func download(forURL url: String, completion: @escaping(Image) -> ()) {
         
-        apiService.downloadAndCacheImage(withURL: url) { image in
+        apiService.download(withURL: url) { image in
             completion(image)
+            self.cache(image, forURL: url)
         }
         
+    }
+    
+    func cache(_ image: Image, forURL url: String) {
+        imageCache.add(image, withIdentifier: url)
+    }
+    
+    func cachedImage(forURL url: String) -> Image? {
+        return imageCache.image(withIdentifier: url)
     }
     
 }
