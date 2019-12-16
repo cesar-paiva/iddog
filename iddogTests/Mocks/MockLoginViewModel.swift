@@ -33,5 +33,13 @@ class MockLoginViewModel: LoginViewModel {
         }
     }
     
+    override func login(email: String?, completion: @escaping (User?, Error?) -> ()) {
+        if let (expectation, expectedEmail) = loginExpectation, let email = email {
+            if email.compare(expectedEmail) == .orderedSame {
+                expectation.fulfill()
+            }
+        }
+    }
+    
 }
 

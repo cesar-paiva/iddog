@@ -11,10 +11,10 @@ import AlamofireImage
 
 class HomeViewModel {
     
-    private lazy var apiService = ApiService()
-    private var coreDataService = CoreDataService()
+    lazy var apiService = ApiService()
+    lazy var coreDataService = CoreDataService()
     
-    private let imageCache = AutoPurgingImageCache(
+    let imageCache = AutoPurgingImageCache(
         memoryCapacity: UInt64(100).megabytes(),
         preferredMemoryUsageAfterPurge: UInt64(60).megabytes()
     )

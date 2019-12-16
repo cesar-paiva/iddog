@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		1DEEEC819E469F1051FCC563 /* Pods_iddogTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B248C9B18783F03479CF2F35 /* Pods_iddogTests.framework */; };
 		7CEB745EDA4804139DADC152 /* Pods_iddog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEFE77AE739F7F9C7446FFE3 /* Pods_iddog.framework */; };
+		900161B023A7837B00337CA8 /* HomeCollectionViewCellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 900161AF23A7837B00337CA8 /* HomeCollectionViewCellTests.swift */; };
+		900161B223A7844400337CA8 /* MockHomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 900161B123A7844400337CA8 /* MockHomeCollectionViewCell.swift */; };
+		900161B423A785B800337CA8 /* UIImageViewStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 900161B323A785B800337CA8 /* UIImageViewStub.swift */; };
 		9005AEE123A319E700DE034F /* CoreDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9005AEE023A319E700DE034F /* CoreDataService.swift */; };
 		900CD94023A554DF00240942 /* Dog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 900CD93F23A554DF00240942 /* Dog.swift */; };
 		900CD94323A555AA00240942 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 900CD94223A555AA00240942 /* HomeViewModel.swift */; };
@@ -37,6 +40,13 @@
 		9070AED223A087AF00297194 /* LoginViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9070AED123A087AF00297194 /* LoginViewModelTests.swift */; };
 		9070AED423A087EF00297194 /* MockLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9070AED323A087EF00297194 /* MockLoginViewController.swift */; };
 		9070AED623A088FB00297194 /* MockEmailValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9070AED523A088FB00297194 /* MockEmailValidator.swift */; };
+		90FB0D7B23A703E70081ABF5 /* MockHomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90FB0D7A23A703E70081ABF5 /* MockHomeViewModel.swift */; };
+		90FB0D7D23A704C70081ABF5 /* HomeViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90FB0D7C23A704C70081ABF5 /* HomeViewModelTests.swift */; };
+		90FB0D8123A707F10081ABF5 /* MockApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90FB0D8023A707F10081ABF5 /* MockApiService.swift */; };
+		90FB0D8523A718CF0081ABF5 /* UIActivityIndicatorViewStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90FB0D8423A718CF0081ABF5 /* UIActivityIndicatorViewStub.swift */; };
+		90FB0D8723A71AAA0081ABF5 /* HomeViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90FB0D8623A71AAA0081ABF5 /* HomeViewControllerTests.swift */; };
+		90FB0D8923A71C4F0081ABF5 /* UICollectionViewStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90FB0D8823A71C4F0081ABF5 /* UICollectionViewStub.swift */; };
+		90FB0D8B23A71FB10081ABF5 /* UISegmentedControlStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90FB0D8A23A71FB10081ABF5 /* UISegmentedControlStub.swift */; };
 		90FF732923A5B07600901FDF /* UInt64+megabytes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90FF732823A5B07600901FDF /* UInt64+megabytes.swift */; };
 		C1385081CEF6E03A94AAEC24 /* Pods_iddog_iddogUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 990A5128CC2286BAA227A81F /* Pods_iddog_iddogUITests.framework */; };
 /* End PBXBuildFile section */
@@ -61,6 +71,9 @@
 /* Begin PBXFileReference section */
 		5227B465B5AC60BFF00E7CD4 /* Pods-iddog-iddogUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iddog-iddogUITests.debug.xcconfig"; path = "Target Support Files/Pods-iddog-iddogUITests/Pods-iddog-iddogUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		7ED9C4B414004BB2680226B4 /* Pods-iddog.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iddog.debug.xcconfig"; path = "Target Support Files/Pods-iddog/Pods-iddog.debug.xcconfig"; sourceTree = "<group>"; };
+		900161AF23A7837B00337CA8 /* HomeCollectionViewCellTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCellTests.swift; sourceTree = "<group>"; };
+		900161B123A7844400337CA8 /* MockHomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockHomeCollectionViewCell.swift; sourceTree = "<group>"; };
+		900161B323A785B800337CA8 /* UIImageViewStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewStub.swift; sourceTree = "<group>"; };
 		9005AEE023A319E700DE034F /* CoreDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataService.swift; sourceTree = "<group>"; };
 		900CD93F23A554DF00240942 /* Dog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dog.swift; sourceTree = "<group>"; };
 		900CD94223A555AA00240942 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
@@ -95,6 +108,13 @@
 		9070AED123A087AF00297194 /* LoginViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModelTests.swift; sourceTree = "<group>"; };
 		9070AED323A087EF00297194 /* MockLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockLoginViewController.swift; sourceTree = "<group>"; };
 		9070AED523A088FB00297194 /* MockEmailValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockEmailValidator.swift; sourceTree = "<group>"; };
+		90FB0D7A23A703E70081ABF5 /* MockHomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockHomeViewModel.swift; sourceTree = "<group>"; };
+		90FB0D7C23A704C70081ABF5 /* HomeViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModelTests.swift; sourceTree = "<group>"; };
+		90FB0D8023A707F10081ABF5 /* MockApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockApiService.swift; sourceTree = "<group>"; };
+		90FB0D8423A718CF0081ABF5 /* UIActivityIndicatorViewStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIActivityIndicatorViewStub.swift; sourceTree = "<group>"; };
+		90FB0D8623A71AAA0081ABF5 /* HomeViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewControllerTests.swift; sourceTree = "<group>"; };
+		90FB0D8823A71C4F0081ABF5 /* UICollectionViewStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionViewStub.swift; sourceTree = "<group>"; };
+		90FB0D8A23A71FB10081ABF5 /* UISegmentedControlStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISegmentedControlStub.swift; sourceTree = "<group>"; };
 		90FF732823A5B07600901FDF /* UInt64+megabytes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UInt64+megabytes.swift"; sourceTree = "<group>"; };
 		947AC1F84C80D992F5B3A7BF /* Pods-iddog-iddogUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iddog-iddogUITests.release.xcconfig"; path = "Target Support Files/Pods-iddog-iddogUITests/Pods-iddog-iddogUITests.release.xcconfig"; sourceTree = "<group>"; };
 		990A5128CC2286BAA227A81F /* Pods_iddog_iddogUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iddog_iddogUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -273,6 +293,9 @@
 				9070AECA23A0826E00297194 /* Stubs */,
 				9070AEC523A0822900297194 /* LoginViewControllerTests.swift */,
 				9070AED123A087AF00297194 /* LoginViewModelTests.swift */,
+				90FB0D8623A71AAA0081ABF5 /* HomeViewControllerTests.swift */,
+				90FB0D7C23A704C70081ABF5 /* HomeViewModelTests.swift */,
+				900161AF23A7837B00337CA8 /* HomeCollectionViewCellTests.swift */,
 				904627A0239F104F0094D540 /* Info.plist */,
 			);
 			path = iddogTests;
@@ -357,8 +380,11 @@
 			isa = PBXGroup;
 			children = (
 				9070AEC823A0824800297194 /* MockLoginViewModel.swift */,
+				90FB0D7A23A703E70081ABF5 /* MockHomeViewModel.swift */,
 				9070AED323A087EF00297194 /* MockLoginViewController.swift */,
 				9070AED523A088FB00297194 /* MockEmailValidator.swift */,
+				90FB0D8023A707F10081ABF5 /* MockApiService.swift */,
+				900161B123A7844400337CA8 /* MockHomeCollectionViewCell.swift */,
 			);
 			path = Mocks;
 			sourceTree = "<group>";
@@ -369,6 +395,10 @@
 				9070AECB23A0826E00297194 /* UITextFieldStub.swift */,
 				9070AECD23A0848A00297194 /* UIButtonStub.swift */,
 				9070AECF23A086E100297194 /* UILabelStub.swift */,
+				90FB0D8423A718CF0081ABF5 /* UIActivityIndicatorViewStub.swift */,
+				90FB0D8823A71C4F0081ABF5 /* UICollectionViewStub.swift */,
+				90FB0D8A23A71FB10081ABF5 /* UISegmentedControlStub.swift */,
+				900161B323A785B800337CA8 /* UIImageViewStub.swift */,
 			);
 			path = Stubs;
 			sourceTree = "<group>";
@@ -655,12 +685,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				90FB0D8B23A71FB10081ABF5 /* UISegmentedControlStub.swift in Sources */,
+				90FB0D8123A707F10081ABF5 /* MockApiService.swift in Sources */,
 				9070AED223A087AF00297194 /* LoginViewModelTests.swift in Sources */,
 				9070AECC23A0826E00297194 /* UITextFieldStub.swift in Sources */,
+				90FB0D8923A71C4F0081ABF5 /* UICollectionViewStub.swift in Sources */,
+				900161B223A7844400337CA8 /* MockHomeCollectionViewCell.swift in Sources */,
+				90FB0D8523A718CF0081ABF5 /* UIActivityIndicatorViewStub.swift in Sources */,
 				9070AED423A087EF00297194 /* MockLoginViewController.swift in Sources */,
 				9070AED623A088FB00297194 /* MockEmailValidator.swift in Sources */,
+				900161B023A7837B00337CA8 /* HomeCollectionViewCellTests.swift in Sources */,
+				90FB0D7B23A703E70081ABF5 /* MockHomeViewModel.swift in Sources */,
+				90FB0D7D23A704C70081ABF5 /* HomeViewModelTests.swift in Sources */,
+				900161B423A785B800337CA8 /* UIImageViewStub.swift in Sources */,
 				9070AED023A086E100297194 /* UILabelStub.swift in Sources */,
 				9070AECE23A0848A00297194 /* UIButtonStub.swift in Sources */,
+				90FB0D8723A71AAA0081ABF5 /* HomeViewControllerTests.swift in Sources */,
 				9070AEC923A0824900297194 /* MockLoginViewModel.swift in Sources */,
 				9070AEC623A0822900297194 /* LoginViewControllerTests.swift in Sources */,
 			);
