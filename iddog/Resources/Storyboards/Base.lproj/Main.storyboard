@@ -139,13 +139,18 @@
                                     <action selector="dogBreedValueChanged:" destination="lHc-YG-YQR" eventType="valueChanged" id="CpF-el-hG0"/>
                                 </connections>
                             </segmentedControl>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="5te-hd-JRw">
+                                <rect key="frame" x="177.5" y="323.5" width="20" height="20"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="X5s-0R-rVh" firstAttribute="top" secondItem="RE3-Au-E8b" secondAttribute="top" constant="16" id="1h6-eF-1sl"/>
                             <constraint firstItem="RE3-Au-E8b" firstAttribute="bottom" secondItem="cFe-rr-Xiy" secondAttribute="bottom" constant="16" id="3R2-yb-LrI"/>
                             <constraint firstItem="cFe-rr-Xiy" firstAttribute="leading" secondItem="RE3-Au-E8b" secondAttribute="leading" constant="16" id="45U-Qw-RWE"/>
+                            <constraint firstItem="5te-hd-JRw" firstAttribute="centerX" secondItem="Sx9-Ma-CSR" secondAttribute="centerX" id="CkH-Nd-Acl"/>
                             <constraint firstItem="RE3-Au-E8b" firstAttribute="trailing" secondItem="cFe-rr-Xiy" secondAttribute="trailing" constant="16" id="OAX-Zx-BkS"/>
+                            <constraint firstItem="5te-hd-JRw" firstAttribute="centerY" secondItem="Sx9-Ma-CSR" secondAttribute="centerY" id="Ru6-Oe-HFM"/>
                             <constraint firstItem="RE3-Au-E8b" firstAttribute="trailing" secondItem="X5s-0R-rVh" secondAttribute="trailing" constant="16" id="cV0-OS-249"/>
                             <constraint firstItem="cFe-rr-Xiy" firstAttribute="top" secondItem="X5s-0R-rVh" secondAttribute="bottom" constant="32" id="hTf-Ke-awr"/>
                             <constraint firstItem="X5s-0R-rVh" firstAttribute="leading" secondItem="RE3-Au-E8b" secondAttribute="leading" constant="16" id="pxZ-iE-rFY"/>
@@ -153,6 +158,7 @@
                         <viewLayoutGuide key="safeArea" id="RE3-Au-E8b"/>
                     </view>
                     <connections>
+                        <outlet property="activityIndicator" destination="5te-hd-JRw" id="pcE-4K-Osd"/>
                         <outlet property="collectionView" destination="cFe-rr-Xiy" id="RQu-Xu-hcO"/>
                         <outlet property="segmentedControl" destination="X5s-0R-rVh" id="bvT-eW-51v"/>
                     </connections>

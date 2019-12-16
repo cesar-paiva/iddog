@@ -13,6 +13,7 @@ class HomeViewController: UIViewController {
     
     @IBOutlet weak var segmentedControl: UISegmentedControl!
     @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
     var category: String?
     var images = [String]()
@@ -25,14 +26,16 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        activityIndicator.startAnimating()
         configureCollectionViewLayout()
         
-        viewModel.listDogs(forCategory: nil) { (images, error) in
+        viewModel.listDogs(forCategory: category) { (images, error) in
             
-                guard let images = images else { return }
-                
-                self.images = images
-                self.collectionView.reloadData()
+            self.activityIndicator.stopAnimating()
+            guard let images = images else { return }
+            
+            self.images = images
+            self.collectionView.reloadData()
             
         }
     }
@@ -40,7 +43,16 @@ class HomeViewController: UIViewController {
     @IBAction func dogBreedValueChanged(_ sender: UISegmentedControl) {
         
         if let category = segmentedControl.titleForSegment(at: sender.selectedSegmentIndex) {
-            self.category = category
+            
+            activityIndicator.startAnimating()
+            viewModel.listDogs(forCategory: category) { (images, error) in
+                
+                self.activityIndicator.stopAnimating()
+                guard let images = images else { return }
+                
+                self.images = images
+                self.collectionView.reloadData()
+            }
         }
         
     }
